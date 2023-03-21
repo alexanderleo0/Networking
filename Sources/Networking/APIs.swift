@@ -14,7 +14,7 @@ import Foundation
 public typealias OpenAPIClient = OpenAPIClientAPI
 
 open class OpenAPIClientAPI {
-    public static var basePath = "https://rickandmortyapi.com/api"
+    public static var basePath = "https://www.cheapshark.com/api/1.0"
     public static var customHeaders: [String: String] = [:]
     public static var credential: URLCredential?
     public static var requestBuilderFactory: RequestBuilderFactory = URLSessionRequestBuilderFactory()
