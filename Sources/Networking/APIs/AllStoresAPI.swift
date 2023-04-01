@@ -12,6 +12,9 @@ import AnyCodable
 
 open class AllStoresAPI {
 
+    public init () {
+        
+    }
     /**
 
      - returns: [Store]

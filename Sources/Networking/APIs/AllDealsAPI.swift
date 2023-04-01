@@ -12,8 +12,11 @@ import AnyCodable
 
 open class AllDealsAPI {
 
+    public init() {
+        
+    }
     /**
-
+     
      - parameter storeID: (query) Comma separated list of store ID&#39;s to filter on. If not set, all stores will be shown. (optional)
      - parameter pageNumber: (query) The requested pagt number, value is 0 indexed. The X-Total-Page-Count HTTP header on the response will give you the max value for this parameter. (optional)
      - parameter pageSize: (query) The number of deals per page, max value of 60 (optional)
@@ -63,3 +66,6 @@ open class AllDealsAPI {
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
 }
+
+
+
