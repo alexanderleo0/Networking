@@ -39,7 +39,7 @@ open class AllStoresAPI {
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
         let localVariableRequestBuilder: RequestBuilder<[Store]>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
-
+//        print(localVariableUrlComponents?.string ?? localVariableURLString)
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
 }

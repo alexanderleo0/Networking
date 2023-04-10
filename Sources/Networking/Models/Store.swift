@@ -12,15 +12,6 @@ import AnyCodable
 
 public struct Store: Codable, JSONEncodable, Hashable {
     
-//    public static func == (lhs: Store, rhs: Store) -> Bool {
-//        lhs.storeID == rhs.storeID
-//    }
-//
-//    public func hash(into hasher: inout Hasher) {
-//        hasher.combine(storeID)
-//        hasher.combine(storeName)
-//    }
-
     public var storeID: String
     public var storeName: String
     public var isActive: Double
